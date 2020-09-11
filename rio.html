@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+
+
+	    
+		body{
+			
+			
+			background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBWWs4zQ2YaXCAGdqMdyNg4plVIMnmdDwElg&usqp=CAU");
+			background-size:cover;
+		
+		}
+		
+</style>
+
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sh"https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpa"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jmoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2a384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!-- JS, Popper.js, and jQuery -->
+<script src=RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src=rGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+
+</script>
+<body>
+<h1> REMOTE METHOD INVOCATION</h1><br>
+<p>RMI stands for Remote Method Invocation. It is a mechanism that allows an object residing in one system (JVM) to access/invoke an object running on another JVM.</p>
+
+<p>RMI is used to build distributed applications; it provides remote communication between Java programs. It is provided in the package java.rmi.</p><br>
+
+<p>In an RMI application, we write two programs, a server program (resides on the server) and a client program (resides on the client)
+
+Inside the server program, a remote object is created and reference of that object is made available for the client (using the registry).
+
+The client program requests the remote objects on the server and tries to invoke its methods.
+
+The following diagram shows the architecture of an RMI application.</p><br>
+<img src="https://www.tutorialspoint.com/java_rmi/images/rmi_architecture.jpg" height="300 width="300"><br>
+
+Transport Layer − This layer connects the client and the server. It manages the existing connection and also sets up new connections<br>
+
+Stub − A stub is a representation (proxy) of the remote object at client. It resides in the client system; it acts as a gateway for the client program.<br>
+
+Skeleton − This is the object which resides on the server side. stub communicates with this skeleton to pass request to the remote object.<br>
+
+RRL(Remote Reference Layer) − It is the layer which manages the references made by the client to the remote object.<br>
+
+<h4>Working of an RMI Application</h4>
+<p>The following points summarize how an RMI application works −
+
+When the client makes a call to the remote object, it is received by the stub which eventually passes this request to the RRL.
+
+When the client-side RRL receives the request, it invokes a method called invoke() of the object remoteRef. It passes the request to the RRL on the server side.
+
+The RRL on the server side passes the request to the Skeleton (proxy on the server) which finally invokes the required object on the server.
+
+The result is passed all the way back to the client.</p><br>
+
+<p><h4>Marshalling and Unmarshalling</h4><br>
+Whenever a client invokes a method that accepts parameters on a remote object, the parameters are bundled into a message before being sent over the network. These parameters may be of primitive type or objects. In case of primitive type, the parameters are put together and a header is attached to it. In case the parameters are objects, then they are serialized. This process is known as marshalling.
+
+At the server side, the packed parameters are unbundled and then the required method is invoked. This process is known as unmarshalling.</p><br>
+
+<p><h4>RMI Registry</h4><br>
+RMI registry is a namespace on which all server objects are placed. Each time the server creates an object, it registers this object with the RMIregistry (using bind() or reBind() methods). These are registered using a unique name known as bind name.
+
+To invoke a remote object, the client needs a reference of that object. At that time, the client fetches the object from the registry using its bind name (using lookup() method).</p><br>
+
+The following illustration explains the entire process −<br>
+<img src="https://www.tutorialspoint.com/java_rmi/images/registry.jpg"width="300" height="300"><br>
+<h4>Goals of RMI</h4><br>
+To minimize the complexity of the application.<br>
+To preserve type safety.<br>
+Distributed garbage collection.<br>
+Minimize the difference between working with local and remote objects.<br>
+
+<a href="https://www.javatpoint.com/RMI">TO KNOW THE FURTHER IMPLEMENTATION OF RMI CLICK HERE!</a><br>
+
+
+<a href="https://www.youtube.com/watch?v=Qz9InGoyNac"><h3>lets get it through a video</h3></a>
+
+
+<body>
+
+</body>
+</html>

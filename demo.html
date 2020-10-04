@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<style type="text/css">
+		body{
+margin: auto;
+background-color: grey;
+}
+      .col-md-6{
+      	background-color: blue;
+      	border: 2px solid orange;
+      	padding: 0px;
+      	float: left;
+
+
+      }
+		#rot{
+			visibility: hidden;
+			background-color:yellow;
+
+		}
+		.heading{
+background-color: purple;
+text-align: center;
+border: 2px solid black; 
+
+
+		}
+		.btn{
+
+			
+			width: 1390px;
+			height: 60px;
+			background-color: black;
+			color: white;
+			background-position: center;
+			
+
+		}
+
+
+	</style>
+</head>
+<script type="text/javascript">
+
+	function sub()
+	{
+ 
+  var x=document.querySelector('input[name="q2"]:checked').value;
+  var y=document.querySelector('input[name="q1"]:checked').value;
+  var a=document.querySelector('input[name="q3"]:checked').value;
+  var b=document.querySelector('input[name="q4"]:checked').value;
+   var c=document.querySelector('input[name="q5"]:checked').value; 
+   var d=document.querySelector('input[name="q6"]:checked').value;
+    var e=document.querySelector('input[name="q7"]:checked').value;
+     var f=document.querySelector('input[name="q8"]:checked').value;
+      var g=document.querySelector('input[name="q9"]:checked').value;
+       var h=document.querySelector('input[name="q10"]:checked').value;
+        var i=document.querySelector('input[name="q11"]:checked').value;
+        var j=document.querySelector('input[name="q12"]:checked').value;
+         var k=document.querySelector('input[name="q13"]:checked').value;
+         var l=document.querySelector('input[name="q14"]:checked').value;
+         var m=document.querySelector('input[name="q15"]:checked').value;
+           var n=document.querySelector('input[name="q16"]:checked').value;
+          var o=document.querySelector('input[name="q17"]:checked').value;
+           var p=document.querySelector('input[name="q18"]:checked').value;
+            var q=document.querySelector('input[name="q19"]:checked').value;
+             var r=document.querySelector('input[name="q20"]:checked').value;
+              var s=document.querySelector('input[name="q21"]:checked').value;
+               var t=document.querySelector('input[name="q22"]:checked').value;
+                var u=document.querySelector('input[name="q23"]:checked').value;
+                 var v=document.querySelector('input[name="q24"]:checked').value;
+  
+
+if (x=="narendramodi"&&y=="ramnathkovind"&&(a=="ysjagan"&&b=="kcr"&&(c=="mb"&&d=="hm"&&(e=="yed"&&f=="pv"&&(g=="sc"&&h=="tr"&&(i=="bkd"&&j=="ag"&&(k=="sg"&&l=="ktr"&&(m=="raj"&&n=="ndm"&&(o=="jnp"&&p=="tr"&&(q=="bs"&&r=="pl"&&(s=="nt"&&t=="np"&&(u=="ud"&&v=="as"))))))))))))
+{
+alert("submitted form");
+document.getElementById("mine").submit();
+}
+else
+{
+	alert("all answers are not correct");
+	document.getElementById("rot").style.visibility="visible";
+	event.preventDefault();
+	return;
+}
+}
+</script>
+<body>
+	<form id="mine" action="https://jntuacea.net/wtclass/formsubmit.php" method="post">
+		<div class="heading" >
+			<h1> <span style="color:yellow;"> Quiz!</span></h1>
+
+			<marquee><h2>lets check ure knowledge!</h2></marquee>
+		</div>
+	
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+	<h4>1.who is prime minister of india?</h4>
+	<div class="one">
+<input type="radio" name="q2" value="kezrewal" required="required" >     kezrewal<br>
+<input type="radio" name="q2" value="yogiadityanath" required="required" >yogi aditya nath<br>
+<input type="radio" name="q2"   value="narendramodi" required="required" >narendra modi<br>
+<input type="radio" name="q2"   value="ramnathkovind" required="required" >ram nath kovind<br>
+</div>
+
+	<h4>2.who is president of india?</h4>
+<input type="radio" name="q1" value="kezrewal" required="required" >kezrewal<br>
+<input type="radio" name="q1" value="yogi aditya nath" required="required" >yogi aditya nath<br>
+<input type="radio" name="q1" value="narendra modi" required="required" >narendra modi<br>
+<input type="radio" name="q1" value="ramnathkovind" required="required" >ram nath kovind<br>
+
+
+
+<h4> 3.who is cm of ap?</h4>
+<input type="radio" name="q3" value="kezrewal" required="required" >kezrewal<br>
+<input type="radio" name="q3" value="yogi aditya nath" required="required" >yogi aditya nath<br>
+<input type="radio" name="q3" value="ysjagan" required="required" >ysjagan<br>
+<input type="radio" name="q3" value="ram nath kovind" required="required" >ram nath kovind<br>
+
+
+<h4>4. who is cm of telangana?</h4>
+<input type="radio" name="q4" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q4" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q4" value="mvr" required="required" >mvr<br>
+<input type="radio" name="q4" value="ntr" required="required" >ntr<br>
+
+
+<h4>5. who is cm of bengal?</h4>
+<input type="radio" name="q5" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q5" value="mb" required="required" >mamatha benerjee<br>
+<input type="radio" name="q5" value="mvr" required="required" >mvr<br>
+<input type="radio" name="q5" value="ntr" required="required" >ntr<br>
+
+
+<h4> 6.who is cm of jharkhand?</h4>
+<input type="radio" name="q6" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q6" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q6" value="hm" required="required" >hemanth seron<br>
+<input type="radio" name="q6" value="ntr" required="required" >ntr<br>
+</div>
+<div class="col-md-6">
+<h4> 7.who is cm of karnataka?</h4>
+<input type="radio" name="q7" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q7" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q7" value="yed" required="required" >yedurappa<br>
+<input type="radio" name="q7" value="ntr" required="required" >ntr<br>
+
+<h4>8. who is cm of kerala?</h4>
+<input type="radio" name="q8" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q8" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q8" value="mvr" required="required" >mvr<br>
+<input type="radio" name="q8" value="pv" required="required" >pinari vijayan<br>
+
+<h4> 9.who is cm of maharashtra?</h4>
+<input type="radio" name="q9" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q9" value="sc" required="required" >shivarajsingh chouhan<br>
+<input type="radio" name="q9" value="mvr" required="required" >mvr<br>
+<input type="radio" name="q9" value="ntr" required="required" >ntr<br>
+
+<h4> 10.who is cm of uttarkhand?</h4>
+<input type="radio" name="q10" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q10" value="tr" required="required" >trivendra singh<br>
+<input type="radio" name="q10" value="mvr" required="required" >mvr<br>
+<input type="radio" name="q10" value="ntr" required="required" >ntr<br>
+
+<h4> 11.who is cm of tripura?</h4>
+<input type="radio" name="q11" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q11" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q11" value="bkd" required="required" >biplab kumar dev<br>
+<input type="radio" name="q11" value="ntr" required="required" >ntr<br>
+
+<h4> 12.who is cm of rajasthan?</h4>
+<input type="radio" name="q12" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q12" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q12" value="ag" required="required" >ashok gehlot<br>
+<input type="radio" name="q12" value="ntr" required="required" >ntr<br>
+</div>
+<div class="col-md-6">
+<h4> 13.who is head of congress?</h4>
+<input type="radio" name="q13" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q13" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q13" value="sg" required="required" >sonia gandhi<br>
+<input type="radio" name="q13" value="ntr" required="required" >rahul gandhi<br>
+
+<h4> 14.who is it minister of telangana?</h4>
+<input type="radio" name="q14" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q14" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q14" value="push" required="required" >mvr<br>
+<input type="radio" name="q14" value="ntr" required="required" >ntr<br>
+
+<h4> 15.who is finanace minister of ap?</h4>
+<input type="radio" name="q15" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q15" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q15" value="raj" required="required" >rajendra nath reddy<br>
+<input type="radio" name="q15" value="ntr" required="required" >ntr<br>
+
+<h4> 16.who is educational minster of ap?</h4>
+<input type="radio" name="q16" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q16" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q16" value="ndm" required="required" >nadimulla suresh<br>
+<input type="radio" name="q16" value="ntr" required="required" >ntr<br>
+
+<h4> 17.who is head of china?</h4>
+<input type="radio" name="q17" value="ktr" required="required" >kimjong<br>
+<input type="radio" name="q17" value="kcr" required="required" >hyui<br>
+<input type="radio" name="q17" value="jnp" required="required" >jinping<br>
+<input type="radio" name="q17" value="ntr" required="required" >poiuy<br>
+
+<h4> 18.who is president of us?</h4>
+<input type="radio" name="q18" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q18" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q18" value="tr" required="required" >trumph<br>
+<input type="radio" name="q18" value="obama" required="required" >obama<br>
+</div>
+<div class="col-md-6">
+
+<h4> 19.who is cm of manipur?</h4>
+<input type="radio" name="q19" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q19" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q19" value="bs" required="required" >biren singh<br>
+<input type="radio" name="q19" value="ntr" required="required" >ntr<br>
+
+
+<h4>20. who is cm of tamilnadu?</h4>
+<input type="radio" name="q20" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q20" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q20" value="pl" required="required" >palaniswamy<br>
+<input type="radio" name="q20" value="ntr" required="required" >ntr<br>
+
+<h4> 21.who is cm of sikkim?</h4>
+<input type="radio" name="q21" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q21" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q21" value="mvr" required="required" >mvr<br>
+<input type="radio" name="q21" value="nt" required="required" >golay<br>
+
+<h4> 22.who is cm of odisha?</h4>
+<input type="radio" name="q22" value="np" required="required" >naveen patnaik<br>
+<input type="radio" name="q22" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q22" value="mvr" required="required" >mvr<br>
+<input type="radio" name="q22" value="ntr" required="required" >ntr<br>
+
+<h4> 23.who is cm of maharashtra?</h4>
+<input type="radio" name="q23" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q23" value="kcr" required="required" >kcr<br>
+<input type="radio" name="q23" value="ud" required="required" >uddhav tackery<br>
+<input type="radio" name="q23" value="ntr" required="required" >ntr<br>
+
+<h4> 24.who is cm of punjab?</h4>
+<input type="radio" name="q24" value="ktr" required="required" >ktr<br>
+<input type="radio" name="q24" value="as" required="required" >amirindra singh<br>
+<input type="radio" name="q24" value="mvr" required="required" >mvr<br>
+<input type="radio" name="q24" value="ntr" required="required" >ntr<br>
+</div>
+</div>
+</div>
+
+<div class="btn">
+<input type="submit" onclick="sub()" value="Submit">
+</div>
+
+<div id="rot">
+	<marquee style="color:green;"><h3> check here for answers!</h3></marquee>
+1.narendra modi<br>
+2.ramnath covind<br>
+3.jagan YS<br>
+4.kcr<br>
+5.mamatha benarjee<br>
+6.hemanth seron<br>
+7.yedurappa<br>
+8.pinary vijayan<br>
+9.shiva raj singh chouhan<br>
+10.trivendra singh<br>
+11.biplab kumar dev<br>
+12.ashok gehlot<br>
+13.sonia gandhi<br>
+14.ktr<br>
+15.rajendra nath reddy<br>
+16.nadimulla suresh<br>
+17.jinping<br>
+18.trumph<br>
+19.biren singh<br>
+ 20.palaniswamy<br>
+ 21.golay<br>
+22.naveen patnaik<br>
+23.uddhav tackery<br>
+24.amirindra singh<br>
+</div>
+
+
+
+</form>
+
+</body>
+</html>
